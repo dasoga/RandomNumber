@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>RandomNumberWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2CE532A21CAE1E7B00F17E29</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2CE532B91CAE1ED500F17E29</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -12,7 +12,56 @@
 		2CE532AC1CAE1E7B00F17E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE532AA1CAE1E7B00F17E29 /* Main.storyboard */; };
 		2CE532AE1CAE1E7B00F17E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE532AD1CAE1E7B00F17E29 /* Assets.xcassets */; };
 		2CE532B11CAE1E7B00F17E29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE532AF1CAE1E7B00F17E29 /* LaunchScreen.storyboard */; };
+		2CE532BE1CAE1ED500F17E29 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE532BC1CAE1ED500F17E29 /* Interface.storyboard */; };
+		2CE532C01CAE1ED500F17E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE532BF1CAE1ED500F17E29 /* Assets.xcassets */; };
+		2CE532C71CAE1ED500F17E29 /* RandomNumberWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2CE532C61CAE1ED500F17E29 /* RandomNumberWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2CE532CC1CAE1ED500F17E29 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE532CB1CAE1ED500F17E29 /* InterfaceController.swift */; };
+		2CE532CE1CAE1ED500F17E29 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE532CD1CAE1ED500F17E29 /* ExtensionDelegate.swift */; };
+		2CE532D01CAE1ED500F17E29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE532CF1CAE1ED500F17E29 /* Assets.xcassets */; };
+		2CE532D41CAE1ED500F17E29 /* RandomNumberWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2CE532BA1CAE1ED500F17E29 /* RandomNumberWatch.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2CE532C81CAE1ED500F17E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CE5329B1CAE1E7B00F17E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CE532C51CAE1ED500F17E29;
+			remoteInfo = "RandomNumberWatch Extension";
+		};
+		2CE532D21CAE1ED500F17E29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2CE5329B1CAE1E7B00F17E29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2CE532B91CAE1ED500F17E29;
+			remoteInfo = RandomNumberWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2CE532D81CAE1ED500F17E29 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2CE532C71CAE1ED500F17E29 /* RandomNumberWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CE532DC1CAE1ED500F17E29 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2CE532D41CAE1ED500F17E29 /* RandomNumberWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2CE532A31CAE1E7B00F17E29 /* RandomNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +71,26 @@
 		2CE532AD1CAE1E7B00F17E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CE532B01CAE1E7B00F17E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CE532B21CAE1E7B00F17E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CE532BA1CAE1ED500F17E29 /* RandomNumberWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomNumberWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE532BD1CAE1ED500F17E29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		2CE532BF1CAE1ED500F17E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CE532C11CAE1ED500F17E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CE532C61CAE1ED500F17E29 /* RandomNumberWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RandomNumberWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CE532CB1CAE1ED500F17E29 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		2CE532CD1CAE1ED500F17E29 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		2CE532CF1CAE1ED500F17E29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2CE532D11CAE1ED500F17E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2CE532A01CAE1E7B00F17E29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CE532C31CAE1ED500F17E29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				2CE532A51CAE1E7B00F17E29 /* RandomNumber */,
+				2CE532BB1CAE1ED500F17E29 /* RandomNumberWatch */,
+				2CE532CA1CAE1ED500F17E29 /* RandomNumberWatch Extension */,
 				2CE532A41CAE1E7B00F17E29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				2CE532A31CAE1E7B00F17E29 /* RandomNumber.app */,
+				2CE532BA1CAE1ED500F17E29 /* RandomNumberWatch.app */,
+				2CE532C61CAE1ED500F17E29 /* RandomNumberWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +133,27 @@
 			path = RandomNumber;
 			sourceTree = "<group>";
 		};
+		2CE532BB1CAE1ED500F17E29 /* RandomNumberWatch */ = {
+			isa = PBXGroup;
+			children = (
+				2CE532BC1CAE1ED500F17E29 /* Interface.storyboard */,
+				2CE532BF1CAE1ED500F17E29 /* Assets.xcassets */,
+				2CE532C11CAE1ED500F17E29 /* Info.plist */,
+			);
+			path = RandomNumberWatch;
+			sourceTree = "<group>";
+		};
+		2CE532CA1CAE1ED500F17E29 /* RandomNumberWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2CE532CB1CAE1ED500F17E29 /* InterfaceController.swift */,
+				2CE532CD1CAE1ED500F17E29 /* ExtensionDelegate.swift */,
+				2CE532CF1CAE1ED500F17E29 /* Assets.xcassets */,
+				2CE532D11CAE1ED500F17E29 /* Info.plist */,
+			);
+			path = "RandomNumberWatch Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +164,51 @@
 				2CE5329F1CAE1E7B00F17E29 /* Sources */,
 				2CE532A01CAE1E7B00F17E29 /* Frameworks */,
 				2CE532A11CAE1E7B00F17E29 /* Resources */,
+				2CE532DC1CAE1ED500F17E29 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2CE532D31CAE1ED500F17E29 /* PBXTargetDependency */,
 			);
 			name = RandomNumber;
 			productName = RandomNumber;
 			productReference = 2CE532A31CAE1E7B00F17E29 /* RandomNumber.app */;
 			productType = "com.apple.product-type.application";
+		};
+		2CE532B91CAE1ED500F17E29 /* RandomNumberWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CE532D91CAE1ED500F17E29 /* Build configuration list for PBXNativeTarget "RandomNumberWatch" */;
+			buildPhases = (
+				2CE532B81CAE1ED500F17E29 /* Resources */,
+				2CE532D81CAE1ED500F17E29 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2CE532C91CAE1ED500F17E29 /* PBXTargetDependency */,
+			);
+			name = RandomNumberWatch;
+			productName = RandomNumberWatch;
+			productReference = 2CE532BA1CAE1ED500F17E29 /* RandomNumberWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2CE532C51CAE1ED500F17E29 /* RandomNumberWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2CE532D51CAE1ED500F17E29 /* Build configuration list for PBXNativeTarget "RandomNumberWatch Extension" */;
+			buildPhases = (
+				2CE532C21CAE1ED500F17E29 /* Sources */,
+				2CE532C31CAE1ED500F17E29 /* Frameworks */,
+				2CE532C41CAE1ED500F17E29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RandomNumberWatch Extension";
+			productName = "RandomNumberWatch Extension";
+			productReference = 2CE532C61CAE1ED500F17E29 /* RandomNumberWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +221,12 @@
 				ORGANIZATIONNAME = Dasoga;
 				TargetAttributes = {
 					2CE532A21CAE1E7B00F17E29 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					2CE532B91CAE1ED500F17E29 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					2CE532C51CAE1ED500F17E29 = {
 						CreatedOnToolsVersion = 7.3;
 					};
 				};
@@ -113,6 +245,8 @@
 			projectRoot = "";
 			targets = (
 				2CE532A21CAE1E7B00F17E29 /* RandomNumber */,
+				2CE532B91CAE1ED500F17E29 /* RandomNumberWatch */,
+				2CE532C51CAE1ED500F17E29 /* RandomNumberWatch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +262,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CE532B81CAE1ED500F17E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE532C01CAE1ED500F17E29 /* Assets.xcassets in Resources */,
+				2CE532BE1CAE1ED500F17E29 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CE532C41CAE1ED500F17E29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE532D01CAE1ED500F17E29 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,7 +291,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2CE532C21CAE1ED500F17E29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CE532CE1CAE1ED500F17E29 /* ExtensionDelegate.swift in Sources */,
+				2CE532CC1CAE1ED500F17E29 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2CE532C91CAE1ED500F17E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CE532C51CAE1ED500F17E29 /* RandomNumberWatch Extension */;
+			targetProxy = 2CE532C81CAE1ED500F17E29 /* PBXContainerItemProxy */;
+		};
+		2CE532D31CAE1ED500F17E29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2CE532B91CAE1ED500F17E29 /* RandomNumberWatch */;
+			targetProxy = 2CE532D21CAE1ED500F17E29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2CE532AA1CAE1E7B00F17E29 /* Main.storyboard */ = {
@@ -157,6 +330,14 @@
 				2CE532B01CAE1E7B00F17E29 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2CE532BC1CAE1ED500F17E29 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2CE532BD1CAE1ED500F17E29 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -267,6 +448,66 @@
 			};
 			name = Release;
 		};
+		2CE532D61CAE1ED500F17E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RandomNumberWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dasoga.RandomNumber.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		2CE532D71CAE1ED500F17E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RandomNumberWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dasoga.RandomNumber.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		2CE532DA1CAE1ED500F17E29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RandomNumberWatch_Extension;
+				INFOPLIST_FILE = RandomNumberWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dasoga.RandomNumber.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		2CE532DB1CAE1ED500F17E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RandomNumberWatch_Extension;
+				INFOPLIST_FILE = RandomNumberWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dasoga.RandomNumber.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +525,22 @@
 			buildConfigurations = (
 				2CE532B61CAE1E7B00F17E29 /* Debug */,
 				2CE532B71CAE1E7B00F17E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CE532D51CAE1ED500F17E29 /* Build configuration list for PBXNativeTarget "RandomNumberWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE532D61CAE1ED500F17E29 /* Debug */,
+				2CE532D71CAE1ED500F17E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2CE532D91CAE1ED500F17E29 /* Build configuration list for PBXNativeTarget "RandomNumberWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2CE532DA1CAE1ED500F17E29 /* Debug */,
+				2CE532DB1CAE1ED500F17E29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
