@@ -33,6 +33,7 @@ class RandomNumberInterfaceController: WKInterfaceController {
     }
     
     func getRandomNumber(){
+        numberLabel.setAlpha(0.1)
         let userDefaults = NSUserDefaults.standardUserDefaults()
         var num: Int = 0
         let numSaved: UInt32 = UInt32(userDefaults.integerForKey("maxNumber"))
@@ -45,7 +46,12 @@ class RandomNumberInterfaceController: WKInterfaceController {
     }
     
     func updateLayout(num:Int){
-        numberLabel.setText(String(num))
+        
+        animateWithDuration(1.5) {
+            self.numberLabel.setAlpha(1.0)
+            self.numberLabel.setText(String(num))
+        }
+        
     }
 
 }
