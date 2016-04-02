@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2CA9C4B91CAFA27700A6E5DD /* RandomNumberInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9C4B81CAFA27700A6E5DD /* RandomNumberInterfaceController.swift */; };
+		2CA9C4BB1CAFA5AC00A6E5DD /* SettingsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA9C4BA1CAFA5AC00A6E5DD /* SettingsInterfaceController.swift */; };
 		2CE532A71CAE1E7B00F17E29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE532A61CAE1E7B00F17E29 /* AppDelegate.swift */; };
 		2CE532A91CAE1E7B00F17E29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE532A81CAE1E7B00F17E29 /* ViewController.swift */; };
 		2CE532AC1CAE1E7B00F17E29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CE532AA1CAE1E7B00F17E29 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 
 /* Begin PBXFileReference section */
 		2CA9C4B81CAFA27700A6E5DD /* RandomNumberInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RandomNumberInterfaceController.swift; sourceTree = "<group>"; };
+		2CA9C4BA1CAFA5AC00A6E5DD /* SettingsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsInterfaceController.swift; sourceTree = "<group>"; };
 		2CE532A31CAE1E7B00F17E29 /* RandomNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE532A61CAE1E7B00F17E29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CE532A81CAE1E7B00F17E29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				2CE532CF1CAE1ED500F17E29 /* Assets.xcassets */,
 				2CE532D11CAE1ED500F17E29 /* Info.plist */,
 				2CA9C4B81CAFA27700A6E5DD /* RandomNumberInterfaceController.swift */,
+				2CA9C4BA1CAFA5AC00A6E5DD /* SettingsInterfaceController.swift */,
 			);
 			path = "RandomNumberWatch Extension";
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 			files = (
 				2CE532CE1CAE1ED500F17E29 /* ExtensionDelegate.swift in Sources */,
 				2CE532CC1CAE1ED500F17E29 /* InterfaceController.swift in Sources */,
+				2CA9C4BB1CAFA5AC00A6E5DD /* SettingsInterfaceController.swift in Sources */,
 				2CA9C4B91CAFA27700A6E5DD /* RandomNumberInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

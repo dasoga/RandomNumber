@@ -53,10 +53,32 @@
             </objects>
             <point key="canvasLocation" x="589" y="294"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Settings Interface Controller-->
         <scene sceneID="GS9-K5-zmD">
             <objects>
-                <controller id="YVP-XQ-VvC"/>
+                <controller id="YVP-XQ-VvC" customClass="SettingsInterfaceController" customModule="RandomNumberWatch_Extension">
+                    <items>
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="LwX-vt-bfu">
+                            <items>
+                                <group width="1" height="19.5" alignment="center" id="xdx-MI-7Pa">
+                                    <items>
+                                        <label alignment="center" text="Max:" textAlignment="center" id="lGC-fd-fil"/>
+                                        <label alignment="center" text="10" id="vBF-9p-mv2"/>
+                                    </items>
+                                </group>
+                                <slider width="1" alignment="left" maximum="3" steps="3" id="8OC-gx-26Q">
+                                    <connections>
+                                        <action selector="changeMaxValue:" destination="YVP-XQ-VvC" id="fjD-Ir-mzy"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="maxNumberLabel" destination="vBF-9p-mv2" id="1er-v7-ZtB"/>
+                        <outlet property="numberControlSlider" destination="8OC-gx-26Q" id="WX4-pt-UbQ"/>
+                    </connections>
+                </controller>
             </objects>
             <point key="canvasLocation" x="288" y="677"/>
         </scene>
