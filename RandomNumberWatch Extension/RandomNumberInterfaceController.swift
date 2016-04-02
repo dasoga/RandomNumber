@@ -33,7 +33,14 @@ class RandomNumberInterfaceController: WKInterfaceController {
     }
     
     func getRandomNumber(){
-        let num = Int(arc4random_uniform(10))
+        let userDefaults = NSUserDefaults.standardUserDefaults()
+        var num: Int = 0
+        let numSaved: UInt32 = UInt32(userDefaults.integerForKey("maxNumber"))
+        if numSaved != 0{
+            num = Int(arc4random_uniform(numSaved))
+        }else{
+            num = Int(arc4random_uniform(10))
+        }
         updateLayout(num)
     }
     

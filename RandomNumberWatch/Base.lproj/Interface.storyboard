@@ -40,8 +40,8 @@
                     <items>
                         <group width="1" height="146.5" alignment="left" contentMode="center" layout="vertical" id="ahw-FN-wrl">
                             <items>
-                                <label alignment="center" verticalAlignment="center" text="00" textAlignment="center" id="4cV-UX-umZ">
-                                    <fontDescription key="font" type="system" pointSize="80"/>
+                                <label alignment="center" verticalAlignment="center" text="00000" textAlignment="center" id="4cV-UX-umZ">
+                                    <fontDescription key="font" type="system" pointSize="49"/>
                                 </label>
                             </items>
                         </group>
