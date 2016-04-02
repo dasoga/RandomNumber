@@ -8,8 +8,57 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RandomNumberWatch" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RandomNumberWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="9gi-yK-LL9">
+                            <items>
+                                <imageView height="60" alignment="left" id="hVJ-ND-Biq"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="hgg-AS-EmR">
+                            <items>
+                                <button width="1" alignment="left" title="RANDOM" id="jub-zz-meb">
+                                    <connections>
+                                        <segue destination="Crw-zs-FNw" kind="push" id="U1A-RH-4M1"/>
+                                    </connections>
+                                </button>
+                                <button width="1" alignment="left" title="Settings" id="rIF-AC-2px">
+                                    <connections>
+                                        <segue destination="YVP-XQ-VvC" kind="push" id="4p9-Tg-Yb1"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
+        </scene>
+        <!--Random Number Interface Controller-->
+        <scene sceneID="ji3-5u-5YF">
+            <objects>
+                <controller id="Crw-zs-FNw" customClass="RandomNumberInterfaceController" customModule="RandomNumberWatch_Extension">
+                    <items>
+                        <group width="1" height="146.5" alignment="left" contentMode="center" layout="vertical" id="ahw-FN-wrl">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="00" textAlignment="center" id="4cV-UX-umZ">
+                                    <fontDescription key="font" type="system" pointSize="80"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="numberLabel" destination="4cV-UX-umZ" id="DUB-MO-oZS"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="589" y="294"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="GS9-K5-zmD">
+            <objects>
+                <controller id="YVP-XQ-VvC"/>
+            </objects>
+            <point key="canvasLocation" x="288" y="677"/>
         </scene>
     </scenes>
 </document>
