@@ -9,6 +9,9 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var numberLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func getRandomNumber(sender:UIButton){
+        let number = Int(arc4random_uniform(1000))
+        updateLayoutInfo(number)
+    }
+    
+    func updateLayoutInfo(number:Int){
+        numberLabel.text = String(number)
+    }
 
 }
 

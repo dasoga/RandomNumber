@@ -12,7 +12,7 @@
                     <items>
                         <group width="1" alignment="left" id="9gi-yK-LL9">
                             <items>
-                                <imageView height="60" alignment="left" id="hVJ-ND-Biq"/>
+                                <imageView height="60" alignment="left" image="logo" contentMode="scaleAspectFit" id="hVJ-ND-Biq"/>
                             </items>
                         </group>
                         <group width="1" alignment="left" layout="vertical" id="hgg-AS-EmR">
